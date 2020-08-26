@@ -22,8 +22,11 @@
 
 .download-cv {
     border-radius: 2em;
+    /* border: solid 2px green; */
+    padding-right: 2em;
 }
 
 .download-cv i {
-    margin-left: -1em;
+    margin-left: -0.5em;
+    /* border: solid 2px red; */
 }

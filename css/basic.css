@@ -32,3 +32,20 @@ li {
 a {
     text-decoration: none;
 }
+
+.title-bg {
+    overflow: hidden;
+    left: 0;
+    /* top: -50px; */
+    width: 100%;
+    font-size: 120px;
+    line-height: 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0.05;
+}

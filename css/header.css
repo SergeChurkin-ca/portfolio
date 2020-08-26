@@ -59,8 +59,16 @@ span {
     opacity: 1;
     transition: all 1s;
     display: inline;
-    left: 3em;
+    left: 2.7em;
+    background-color: black;
+    padding: 0.4em;
+    border-radius: 0 1em 1em 0;
 }
+
+
+/* i:active {
+    color: green;
+} */
 
 
 /* 2. SOCIAL */
@@ -75,3 +83,6 @@ span {
 .social li {
     margin-top: 2em;
 }
+
+
+/* ----------- */

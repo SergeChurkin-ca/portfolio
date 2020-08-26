@@ -1,0 +1,27 @@
+.resume-items {
+    background-color: rgb(48, 47, 47);
+    width: 50%;
+    margin: 0 10%;
+    border-radius: 2em;
+}
+
+.resume-item,
+.resume .title {
+    text-align: left;
+    padding: 2em 2em;
+}
+
+.resume-item:nth-child(n + 2) {
+    border-top: solid 1px rgb(139, 139, 139);
+}
+
+.resume .title {
+    text-align: left;
+    margin: 0 7%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.resume .title span {
+    color: green;
+}
