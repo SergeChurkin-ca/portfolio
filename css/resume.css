@@ -1,27 +1,77 @@
-.resume-items {
+.resume {
+    height: auto;
+}
+
+.skills {
+    height: auto;
+}
+
+.resume-items,
+.skills-list {
     background-color: rgb(48, 47, 47);
-    width: 50%;
     margin: 0 10%;
     border-radius: 2em;
+    padding: 2em;
 }
 
 .resume-item,
-.resume .title {
+.resume .title,
+.skills .title {
     text-align: left;
     padding: 2em 2em;
 }
 
-.resume-item:nth-child(n + 2) {
+.resume-item:nth-child(n + 2),
+.skills-list li:nth-child(n + 2) {
     border-top: solid 1px rgb(139, 139, 139);
 }
 
-.resume .title {
+.resume .title,
+.skills .title {
     text-align: left;
     margin: 0 7%;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.resume .title span {
+.resume .title span,
+.skills .title span {
     color: green;
+}
+
+.resume .name,
+.skills-list .name {
+    font-weight: 600;
+}
+
+.resume .date {
+    font-size: 0.8rem;
+    margin-top: 0.6em;
+}
+
+.resume .date,
+.resume p {
+    color: grey;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills-wrapper {
+    width: 50%;
+}
+
+.skills-list {
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.skills-list ul {
+    padding: 0.5em 1em;
+}
+
+.skills-list li {
+    padding: 1em;
 }
