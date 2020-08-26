@@ -15,10 +15,13 @@ html {
     background-color: rgb(32, 31, 31);
     color: white;
     text-align: center;
+    font-family: Poppins;
 }
 
 section {
     height: 100vh;
+    border: solid 2px red;
+    margin-left: 5em;
 }
 
 li {

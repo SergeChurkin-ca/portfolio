@@ -57,7 +57,7 @@ span {
 
 .icon:hover+.link {
     opacity: 1;
-    transition: all 0.8s ease 0s;
+    transition: all 1s;
     display: inline;
     left: 3em;
 }

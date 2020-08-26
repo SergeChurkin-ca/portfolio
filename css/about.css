@@ -1,0 +1,29 @@
+.about p {
+    font-size: 1.2em;
+    color: grey;
+    margin: 5em 5em;
+}
+
+.about strong {
+    color: green;
+}
+
+.about i,
+.download-cv {
+    color: white;
+    margin: 0 1em;
+    background-color: rgb(56, 53, 53);
+    padding: 1em;
+}
+
+.about i {
+    border-radius: 50% 50%;
+}
+
+.download-cv {
+    border-radius: 2em;
+}
+
+.download-cv i {
+    margin-left: -1em;
+}
