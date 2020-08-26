@@ -1,0 +1,77 @@
+/* 1. HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #181818;
+    width: 4em;
+    margin: 0 auto;
+}
+
+.main-menu li,
+.social i {
+    font-size: 1em;
+}
+
+header .logo a,
+.icon,
+.social a,
+.link {
+    color: white;
+}
+
+.logo {
+    background-color: green;
+    height: 2em;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.main-menu {
+    margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.main-menu li {
+    margin: 1.5em 2em 1em -1.2em;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.link {
+    opacity: 0;
+    height: 2em;
+    position: absolute;
+    top: 0.2em;
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    text-align: left;
+}
+
+.icon:hover+.link {
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+    display: inline;
+    left: 3em;
+}
+
+
+/* 2. SOCIAL */
+
+.social {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 1em 0.8em 0 0.7em;
+}
+
+.social li {
+    margin-top: 2em;
+}
