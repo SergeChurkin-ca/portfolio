@@ -55,7 +55,7 @@ span {
     text-align: left;
 }
 
-.icon:hover+.link {
+a:hover>.link {
     opacity: 1;
     transition: all 1s;
     display: inline;
@@ -63,6 +63,7 @@ span {
     background-color: black;
     padding: 0.4em;
     border-radius: 0 1em 1em 0;
+    1
 }
 
 
