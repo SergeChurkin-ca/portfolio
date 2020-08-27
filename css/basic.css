@@ -32,6 +32,15 @@ a {
     text-decoration: none;
 }
 
+a:hover,
+a:focus,
+i:hover,
+i:focus,
+.fab:hover,
+li:focus {
+    color: green;
+}
+
 i:active {
     color: green;
 }
