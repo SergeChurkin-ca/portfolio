@@ -14,10 +14,8 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     function error() {
-        status.innerHTML = "Oops! There was a problem.";
+        status.innerHTML = "Oops! There was a problem. Please check your inputs.";
     }
-
-    // handle the form submission event
 
     form.addEventListener("submit", function(ev) {
         ev.preventDefault();

@@ -408,35 +408,35 @@
                                     <!-- geo -->
                                     <div class="contact-element">
                                         <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                        <div class="name">Location</div>
-                                        <p>
-                                            Toronto, ON
-                                        </p>
+                                        <div class="contact-item">
+                                            <p>Location</p>
+                                            <p>Toronto, ON</p>
+                                        </div>
                                     </div>
 
                                     <!-- phone -->
                                     <div class="contact-element">
                                         <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                                        <div class="name">Phone</div>
-                                        <p>
-                                            123-123-1234
-                                        </p>
+                                        <div class="contact-item">
+                                            <p>Phone</p>
+                                            <p>289-501-7013</p>
+                                        </div>
                                     </div>
                                     <!-- email -->
                                     <div class="contact-element">
                                         <div class="icon"><i class="fas fa-at"></i></div>
-                                        <div class="name">Email</div>
-                                        <p>
-                                            sergeexample@example.ca
-                                        </p>
+                                        <div class="contact-item">
+                                            <p>Email</p>
+                                            <p>sergechurkin@gmail.com</p>
+                                        </div>
                                     </div>
                                     <!-- availability -->
                                     <div class="contact-element">
                                         <div class="icon"><i class="far fa-check-square"></i></div>
-                                        <div class="name">Web Developer</div>
-                                        <p>
-                                            Available
-                                        </p>
+                                        <div class="contact-item">
+                                            <p>Front End Developer</p>
+                                            <p>sergechurkin@gmail.com</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="title"><span>Contact</span> Form</div>
@@ -454,17 +454,24 @@
 
                                                 <div class="input-wrapper">
                                                     <label>Name:</label>
-                                                    <input type="text" name="name" placeholder="Full Name" required />
+                                                    <input type="text" name="name" placeholder="Full Name" maxlength="40" required />
                                                     <label>Email:</label>
-                                                    <input type="text" name="email" placeholder="Email Address" required />
-
+                                                    <input type="text" name="email" placeholder="Email Address" maxlength="40" required />
                                                 </div>
-                                                <textarea name="message" placeholder="Your Message" required></textarea>
-                                                <button id="my-form-button" class="button">
-                                                <span class="text ">Send Message</span>
-                                                <span class="icon "><i class="la la-arrow-right "></i></span>
-                                            </button>
-                                                <p id="my-form-status"></p>
+
+                                                <textarea name="message" placeholder="Your Message" maxlength="250" required></textarea>
+
+
+                                                <div class="button-container">
+                                                    <input type="reset" onclick="resetForm" class="button-reset">
+                                                    <button id="my-form-button" class="button">
+                                                	<span class="text ">Send Message <i class="fas fa-arrow-right"></i></span>
+                                                	</button>
+
+
+
+                                                    <p id="my-form-status"></p>
+                                                </div>
                                             </div>
                                         </form>
 
