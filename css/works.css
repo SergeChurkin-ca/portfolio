@@ -1,3 +1,7 @@
+.works {
+    height: auto;
+}
+
 .works .title {
     text-align: left;
     margin: 0 7%;
@@ -7,4 +11,37 @@
 
 .works span {
     color: green;
+}
+
+.work-item {
+    background-color: rgb(48, 47, 47);
+    margin: 5%;
+    border-radius: 2em;
+    padding: 2em;
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work-item a {
+    width: 80%;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.work-item ul li {
+    display: inline-flex;
+    flex-direction: row;
+    /* border: solid 2px red; */
+    width: 15%;
+    padding: 10% 0 0;
+}
+
+img:hover {
+    transform: scale(1.025);
+    transition: all 0.3s;
+    box-shadow: 5px 5px 5px black;
 }

@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+i:active {
+    color: green;
+}
+
 .title-bg {
     overflow: hidden;
     left: 0;

@@ -1,7 +1,27 @@
+.about .text-wrapper {
+    display: flex;
+    padding: 1em;
+    margin: 0 auto;
+    width: 90%;
+}
+
 .about p {
     font-size: 1.2em;
     color: grey;
     margin: 5em 5em;
+    text-align: left;
+    line-height: 2em;
+}
+
+.circle-bts {
+    /* border: solid 2px red; */
+    width: 100%;
+    margin: 5% 20%;
+}
+
+.about img {
+    height: 100%;
+    margin: 2em 0;
 }
 
 .about strong {
