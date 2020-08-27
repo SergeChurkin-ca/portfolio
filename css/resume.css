@@ -4,6 +4,7 @@
 
 .skills {
     height: auto;
+    padding: 3em 0 10em;
 }
 
 .resume-items,
@@ -56,16 +57,26 @@
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 150px;
 }
 
 .skills-wrapper {
     width: 50%;
+    min-width: 350px;
+}
+
+@media (max-width: 780px) {
+    .skills-wrapper {
+        width: 100%;
+    }
 }
 
 .skills-list {
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    display: flex;
 }
 
 .skills-list ul {

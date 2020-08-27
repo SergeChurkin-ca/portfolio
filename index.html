@@ -253,6 +253,7 @@
                             </ul>
                         </div>
                     </div>
+
                     <div class="skills-wrapper">
                         <!-- title -->
                         <div class="title"><span>Additional</span> Skills</div>
@@ -290,15 +291,10 @@
                 </section>
 
 
-
-
-
-
-
-
                 <section class="works" id="works">
                     <div class="works-wrapper">
-                        <h3>Works here</h2>
+                        <div class="title-bg">works</div>
+                        <div class="title"><span>My</span> Works</div>
                     </div>
                 </section>
 
@@ -316,79 +312,89 @@
                         </div>
                         <!-- Contact info -->
                         <div class="contact-info">
-                            <div class="title"><span>Get</span> in Touch</div>
+
                             <div class="contact-items">
+                                <div class="title"><span>Get</span> in Touch</div>
+                                <div class="contact-wrapper">
 
-                                <!-- geo -->
-                                <div class="contact-element">
-                                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <div class="name">Address</div>
-                                    <p>
-                                        Toronto, ON
-                                    </p>
-                                </div>
+                                    <!-- geo -->
+                                    <div class="contact-element">
+                                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="name">Location</div>
+                                        <p>
+                                            Toronto, ON
+                                        </p>
+                                    </div>
 
-                                <!-- phone -->
-                                <div class="contact-element">
-                                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                                    <div class="name">Phone</div>
-                                    <p>
-                                        123-123-1234
-                                    </p>
+                                    <!-- phone -->
+                                    <div class="contact-element">
+                                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                        <div class="name">Phone</div>
+                                        <p>
+                                            123-123-1234
+                                        </p>
+                                    </div>
+                                    <!-- email -->
+                                    <div class="contact-element">
+                                        <div class="icon"><i class="fas fa-at"></i></div>
+                                        <div class="name">Email</div>
+                                        <p>
+                                            sergeexample@example.ca
+                                        </p>
+                                    </div>
+                                    <!-- availability -->
+                                    <div class="contact-element">
+                                        <div class="icon"><i class="far fa-check-square"></i></div>
+                                        <div class="name">Web Developer</div>
+                                        <p>
+                                            Available
+                                        </p>
+                                    </div>
                                 </div>
-                                <!-- email -->
-                                <div class="contact-element">
-                                    <div class="icon"><i class="fas fa-at"></i></div>
-                                    <div class="name">Email</div>
-                                    <p>
-                                        sergeexample@example.ca
-                                    </p>
-                                </div>
-                                <!-- availability -->
-                                <div class="contact-element">
-                                    <div class="icon"><i class="far fa-check-square"></i></div>
-                                    <div class="name">Web Developer</div>
-                                    <p>
-                                        Available
-                                    </p>
-                                </div>
+                                <div class="title"><span>Contact</span> Form</div>
                                 <div class="contact-form">
-                                    <form action="">
-                                        <div class="form-wrapper">
-                                            <input type="text" name="name" placeholder="Full Name" />
-                                            <input type="text" name="email" placeholder="Email Address" />
-                                            <textarea name="message" placeholder="Your Message"></textarea>
-                                            <a href="#" class="button" onclick="$('#cform').submit(); return false;">
-                                                <span class="text">Send Message</span>
-                                                <span class="icon"><i class="fas fa-arrow-right"></i></span>
-                                            </a>
-                                        </div>
-                                    </form>
+
+                                    <div class="contact-items">
+
+                                        <form action="">
+                                            <div class="form-wrapper">
+                                                <div class="input-wrapper">
+                                                    <input type="text" name="name" placeholder="Full Name" required/>
+                                                    <input type="text" name="email" placeholder="Email Address" required/>
+                                                </div>
+                                                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                                                <a href="#" class="button" onclick="$('#cform').submit(); return false;">
+                                                    <span class="text">Send Message</span>
+                                                    <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+
                                 </div>
-
-
 
                             </div>
 
+
                         </div>
-
-
-                    </div>
                 </section>
                 <!-- end of contact section-->
 
-            </div>
+                </div>
         </main>
-    </div>
+        </div>
 
 
-    <!-- jquery scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Google map api-->
-    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <!-- jquery scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Google map api-->
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 
-    <!-- main scripts -->
-    <script src="js/scripts.js"></script>
+        <!-- main scripts -->
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>

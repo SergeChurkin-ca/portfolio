@@ -4,10 +4,10 @@
 }
 
 .home .title h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
-    font-weight: 600;
-    margin: calc((80vh / 2)) 0 0.5em;
+    font-weight: 700;
+    padding: calc((80vh / 2)) 0 0.5em;
     letter-spacing: 0.04em;
 }
 

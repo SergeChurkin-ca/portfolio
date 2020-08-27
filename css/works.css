@@ -1,0 +1,10 @@
+.works .title {
+    text-align: left;
+    margin: 0 7%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.works span {
+    color: green;
+}
