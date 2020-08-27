@@ -1,10 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+}
+
 .wrapper {
     margin: 0 auto;
     transition: all 0.4s ease 0s;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .page {
@@ -51,9 +55,9 @@ i:active {
 .title-bg {
     overflow: hidden;
     left: 0;
-    /* top: -50px; */
     width: 100%;
-    font-size: 120px;
+    /* font-size: 120px; */
+    font-size: calc(45px + (150 - 45) * ((100vw - 300px) / (1600 - 300)));
     line-height: 120px;
     color: #ffffff;
     text-transform: uppercase;

@@ -1,3 +1,7 @@
+.about {
+    height: auto;
+}
+
 .about .text-wrapper {
     display: flex;
     padding: 1em;

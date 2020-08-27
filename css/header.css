@@ -63,13 +63,7 @@ a:hover>.link {
     background-color: black;
     padding: 0.4em;
     border-radius: 0 1em 1em 0;
-    1
 }
-
-
-/* i:active {
-    color: green;
-} */
 
 
 /* 2. SOCIAL */
@@ -84,6 +78,3 @@ a:hover>.link {
 .social li {
     margin-top: 2em;
 }
-
-
-/* ----------- */

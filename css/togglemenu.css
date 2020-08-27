@@ -1,0 +1,31 @@
+#toggle {
+    display: none;
+}
+
+.fa-bars {
+    visibility: hidden;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+@media (max-width: 700px) {
+    .fa-bars {
+        visibility: visible;
+    }
+    header,
+    .social {
+        position: relative;
+        display: inline;
+        background: none;
+    }
+    header .main-menu ul {
+        position: fixed;
+        top: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        /* gap: 1em; */
+        width: 100%;
+    }
+}
