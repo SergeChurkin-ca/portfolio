@@ -2,6 +2,10 @@
     display: none;
 }
 
+.main-menu {
+    position: relative;
+}
+
 .fa-bars {
     visibility: hidden;
     position: fixed;
@@ -27,5 +31,20 @@
         grid-template-rows: 1fr;
         /* gap: 1em; */
         width: 100%;
+    }
+    .toggle-menu ul i {
+        /* display: none; */
+    }
+    #toggle {
+        display: block;
+        height: 10em;
+        opacity: 0;
+        position: fixed;
+        top: -1em;
+        right: -15em;
+    }
+    #toggle:checked~ul i {
+        /* right: 0; */
+        display: none;
     }
 }
