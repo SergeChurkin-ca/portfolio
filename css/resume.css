@@ -1,9 +1,6 @@
-.resume {
-    height: auto;
-}
-
+.resume,
 .skills {
-    height: 100vh;
+    height: auto;
     padding: 3em 0 10em;
 }
 
@@ -25,14 +22,6 @@
 .resume-item:nth-child(n + 2),
 .skills-list li:nth-child(n + 2) {
     border-top: solid 1px rgb(139, 139, 139);
-}
-
-.resume .title,
-.skills .title {
-    text-align: left;
-    margin: 0 7%;
-    font-weight: 600;
-    font-size: 1.5rem;
 }
 
 .resume .title span,
