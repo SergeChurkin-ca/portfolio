@@ -444,45 +444,60 @@
 
                                     <div class="contact-items">
 
-                                        <form action="">
+                                        <!-- Email message form -->
+                                        <!-- modify this form HTML and place wherever you want your form -->
+
+                                        <!-- modify this form HTML and place wherever you want your form -->
+
+                                        <form id="my-form" action="https://formspree.io/maypgnbq" method="POST">
                                             <div class="form-wrapper">
+
                                                 <div class="input-wrapper">
-                                                    <input type="text" name="name" placeholder="Full Name" required/>
-                                                    <input type="text" name="email" placeholder="Email Address" required/>
+                                                    <label>Name:</label>
+                                                    <input type="text" name="name" placeholder="Full Name" required />
+                                                    <label>Email:</label>
+                                                    <input type="text" name="email" placeholder="Email Address" required />
+
                                                 </div>
                                                 <textarea name="message" placeholder="Your Message" required></textarea>
-
-                                                <a href="#" class="button" onclick="$('#cform').submit(); return false;">
-                                                    <span class="text message">Send Message</span>
-                                                    <span class="icon message"><i class="fas fa-arrow-right"></i></span>
-                                                </a>
+                                                <button id="my-form-button" class="button">
+                                                <span class="text ">Send Message</span>
+                                                <span class="icon "><i class="la la-arrow-right "></i></span>
+                                            </button>
+                                                <p id="my-form-status"></p>
                                             </div>
                                         </form>
+
+
+
+
                                     </div>
-
-
 
                                 </div>
 
+
+
                             </div>
 
-
                         </div>
+
+
+                    </div>
                 </section>
                 <!-- end of contact section-->
 
-                </div>
+            </div>
         </main>
-        </div>
+    </div>
 
 
-        <!-- jquery scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Google map api-->
-        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <!-- jquery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Google map api-->
+    <script src="https://maps.google.com/maps/api/js?sensor=false "></script>
 
-        <!-- main scripts -->
-        <script src="js/scripts.js"></script>
+    <!-- main scripts -->
+    <script src="js/scripts.js "></script>
 </body>
 
 </html>

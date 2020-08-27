@@ -13,6 +13,8 @@ html {
     height: 100%;
     width: 100%;
     background-color: rgb(32, 31, 31);
+    /* background-color: #1d1d1d; */
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%23272727' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: white;
     text-align: center;
     font-family: Poppins;
