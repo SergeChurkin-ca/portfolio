@@ -27,10 +27,17 @@
 
 .work-item h3 {
     width: 90%;
+    font-size: 1.5rem;
 }
 
 .work-item a {
     width: 80%;
+}
+
+.work-item p {
+    width: 70%;
+    margin: 2em auto;
+    line-height: 2em;
 }
 
 .work-item img {
