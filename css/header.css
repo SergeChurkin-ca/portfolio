@@ -1,4 +1,4 @@
-/* 1. HEADER */
+/*  HEADER */
 
 header {
     position: fixed;
@@ -74,7 +74,7 @@ a:hover>.link {
 }
 
 
-/* 2. SOCIAL */
+/*  SOCIAL */
 
 .social {
     position: absolute;

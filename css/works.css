@@ -41,7 +41,6 @@
 .work-item ul li {
     display: inline-flex;
     flex-direction: row;
-    /* border: solid 2px red; */
     width: 15%;
     padding: 10% 0 0;
 }

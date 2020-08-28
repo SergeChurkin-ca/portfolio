@@ -163,13 +163,6 @@ textarea:focus {
 }
 
 
-/* MAP */
-
-#map {
-    height: 30%;
-}
-
-
 /* MEDIAQUERIES */
 
 @media (max-width: 860px) {
