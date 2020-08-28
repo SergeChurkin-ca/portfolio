@@ -2,10 +2,20 @@
     height: auto;
 }
 
-.about .text-wrapper {
-    display: flex;
+
+/* .content-wrapper {
+    border: solid 2px red;
+    display: inline-flex;
+    justify-content: space-around;
     padding: 1em;
-    margin: 0 auto;
+} */
+
+.about .text-wrapper {
+    display: inline-flex;
+    padding: 2em 0;
+    flex-wrap: wrap;
+    /* flex: 1 1 150px; */
+    margin: 3em auto;
     width: 90%;
 }
 
@@ -15,17 +25,21 @@
     margin: 5em 5em;
     text-align: left;
     line-height: 2em;
+    width: 40%;
 }
 
 .circle-bts {
     /* border: solid 2px red; */
     width: 100%;
-    margin: 5% 20%;
+    margin: 5% 0;
 }
 
 .about img {
     height: 100%;
+    /* max-width: 400px; */
+    min-width: 75px;
     margin: 2em 0;
+    width: 35%;
 }
 
 .about strong {
