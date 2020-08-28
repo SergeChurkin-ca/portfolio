@@ -155,7 +155,7 @@ textarea {
 }
 
 ::placeholder {
-    color: #fae2e2;
+    color: #faf8f8;
 }
 
 input[type="text"]:focus,

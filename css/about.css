@@ -77,16 +77,7 @@
     }
 }
 
-@media (max-width: 597px) {
-    /* .circle-bts {
-        font-size: 0.6rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-content: center;
-        width: 20em;
-        margin: 0 auto;
-    } */
+@media (max-width: 580px) {
     .circle-bts a:nth-child(n + 2) {
         display: none;
     }
