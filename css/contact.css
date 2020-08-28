@@ -161,7 +161,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    background-color: rgb(167, 250, 167);
+    background-color: rgb(138, 90, 1);
 }
 
 

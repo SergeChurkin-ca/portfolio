@@ -25,6 +25,10 @@
     justify-content: space-evenly;
 }
 
+.work-item h3 {
+    width: 90%;
+}
+
 .work-item a {
     width: 80%;
 }

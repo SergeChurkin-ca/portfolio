@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", function() {
         form.reset();
         button.style = "display: none ";
         status.innerHTML = "Thank you for your message!";
+        document.getElementById("button-reset").style.display = "none";
     }
 
     function error() {
@@ -39,18 +40,4 @@ function ajax(method, url, data, success, error) {
         }
     };
     xhr.send(data);
-}
-
-// MAP
-
-let map;
-
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: {
-            lat: -34.397,
-            lng: 150.644,
-        },
-        zoom: 8,
-    });
 }
