@@ -4,7 +4,7 @@
 
 .home .title h1 {
     /* font-size: 6rem; */
-    font-size: calc(34px + (130 - 34) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(45px + (130 - 45) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     font-weight: 700;
     padding: calc((80vh / 2)) 0 0.5em;
@@ -13,4 +13,19 @@
 
 .home span {
     color: rgb(155, 152, 152);
+}
+
+@media (max-width: 330px) {
+    h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0 0.5em;
+    }
+    .typing-title p {
+        text-align: right;
+        margin: 0.5em;
+    }
 }
