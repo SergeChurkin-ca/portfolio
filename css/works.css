@@ -47,3 +47,19 @@ img:hover {
     transition: all 0.3s;
     box-shadow: 5px 5px 5px black;
 }
+
+@media (max-width: 500px) {
+    .work-item {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .work-item a {
+        width: 100%;
+        order: 1;
+    }
+    .works ul {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+}
