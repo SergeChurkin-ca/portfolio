@@ -48,8 +48,11 @@
     display: inline-flex;
     flex-direction: row;
     width: 15%;
-    height: auto;
     padding: 10% 0 0;
+}
+
+.work-item li img {
+    height: auto;
 }
 
 .works img:hover {
