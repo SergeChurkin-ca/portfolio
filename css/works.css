@@ -44,6 +44,11 @@
     border-radius: 1em;
 }
 
+.work-item ul img {
+    width: 4em;
+    height: auto;
+}
+
 .work-item ul li {
     display: inline-flex;
     flex-direction: row;
@@ -52,7 +57,7 @@
     padding: 10% 0 0;
 }
 
-.works img:hover {
+.work-item a img:hover {
     transform: scale(1.025);
     transition: all 0.3s;
     box-shadow: 5px 5px 5px black;
