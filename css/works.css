@@ -46,7 +46,7 @@
 
 .work-item ul img {
     width: 4em;
-    height: auto;
+    /* height: auto; */
 }
 
 .work-item ul li {
