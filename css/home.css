@@ -3,7 +3,7 @@
 }
 
 .home .title h1 {
-    font-size: calc(45px + (130 - 45) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(45px + (140 - 45) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     font-weight: 700;
     padding: calc((40vh / 2)) 0 0.5em;
@@ -70,12 +70,17 @@ h1 {
     0% {
         opacity: 0;
     }
+    25% {
+        transform: translateY(-600px);
+        transform: translateX(10px);
+        color: rgb(38, 43, 38);
+    }
     50% {
-        transform: translateY(10px);
+        transform: translateY(100px);
         opacity: 1;
     }
     100% {
-        transform: translateY(15px);
+        transform: translateY(25px);
         opacity: 1;
     }
 }

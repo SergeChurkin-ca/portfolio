@@ -15,7 +15,6 @@ body {
 
 .page {
     position: relative;
-    /* overflow: hidden; */
     height: 100%;
     width: 90%;
     color: white;
