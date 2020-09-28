@@ -1,0 +1,45 @@
+          .button-container {
+          display: inline-flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+      
+      .button-container a {
+          color: rgb(16, 48, 16);
+          font-size: 1.1rem;
+      }
+      
+      .btn-grad {
+          background-image: linear-gradient( to bottom, #d2d7db 13%, #807e7e 50%, #212222 90%);
+          width: 7em;
+      }
+      
+      .btn-grad {
+          margin: 10px;
+          padding: 1em 2em;
+          text-align: center;
+          transition: 0.2s;
+          background-size: 200% auto;
+          border: none;
+          color: green;
+          border-color: none;
+          text-shadow: 0px 1px 1px #cac7c7;
+          border-radius: 10px;
+          display: block;
+          cursor: pointer;
+      }
+      
+      .btn-grad:hover {
+          background-position: top bottom;
+          background-image: linear-gradient( to bottom, #ebf1f7 13%, #929191 50%, #010202 90%);
+          text-decoration: none;
+          color: rgb(2, 107, 2);
+          text-shadow: 0px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+      }
+      
+      .btn-grad:active,
+      .btn-grad:focus {
+          transform: scale(0.95);
+          box-shadow: 4px 4px 4px black;
