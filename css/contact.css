@@ -178,7 +178,7 @@ textarea:focus {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
     .contact-info {
         padding: 1em;
         margin: 0 auto;
@@ -197,5 +197,10 @@ textarea:focus {
     .contact-element i {
         font-size: 2rem;
         margin: 0.5em 0.5em;
+    }
+    form textarea,
+    input {
+        border-radius: 6px;
+        margin: 0.8em 0 2em;
     }
 }
