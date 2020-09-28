@@ -73,7 +73,6 @@ h1 {
     25% {
         transform: translateY(-600px);
         transform: translateX(10px);
-        color: rgb(38, 43, 38);
     }
     50% {
         transform: translateY(100px);
