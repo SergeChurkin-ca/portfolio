@@ -41,3 +41,25 @@ function ajax(method, url, data, success, error) {
     };
     xhr.send(data);
 }
+
+// arrow
+
+$(".js-next").click(function(e) {
+    var selected = $(".js-list-item.js-current-panel");
+    var anchors = $(".js-list-item");
+
+    var pos = anchors.index(selected);
+    var next = anchors.get(pos + 1);
+    var prev = anchors.get(pos - 1);
+
+    target = $(next);
+
+    $(selected).removeClass("js-current-panel");
+    $(next).addClass("js-current-panel");
+
+    if (target.offset()) {
+        $("html, body").animate({ scrollTop: target.offset().top + "px" }, 900);
+    }
+
+    e.preventDefault();
+});
