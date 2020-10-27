@@ -1,9 +1,9 @@
 window.addEventListener("DOMContentLoaded", function() {
     // get the form elements defined in your form HTML above
 
-    var form = document.getElementById("my-form");
-    var button = document.getElementById("my-form-button");
-    var status = document.getElementById("my-form-status");
+    let form = document.getElementById("my-form");
+    let button = document.getElementById("my-form-button");
+    let status = document.getElementById("my-form-status");
 
     // Success and Error functions for after the form is submitted
 
@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     form.addEventListener("submit", function(ev) {
         ev.preventDefault();
-        var data = new FormData(form);
+        let data = new FormData(form);
         ajax(form.method, form.action, data, success, error);
     });
 });
@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", function() {
 // helper function for sending an AJAX request
 
 function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open(method, url);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = function() {
@@ -42,15 +42,14 @@ function ajax(method, url, data, success, error) {
     xhr.send(data);
 }
 
-// arrow
+// scroll down arrow
 
 $(".js-next").click(function(e) {
-    var selected = $(".js-list-item.js-current-panel");
-    var anchors = $(".js-list-item");
+    let selected = $(".js-list-item.js-current-panel");
+    let anchors = $(".js-list-item");
 
-    var pos = anchors.index(selected);
-    var next = anchors.get(pos + 1);
-    var prev = anchors.get(pos - 1);
+    let pos = anchors.index(selected);
+    let next = anchors.get(pos + 1);
 
     target = $(next);
 
@@ -62,4 +61,36 @@ $(".js-next").click(function(e) {
     }
 
     e.preventDefault();
+});
+
+// Add class 'active' to section when near top of viewport
+// Define the style of active view and indicate in navbar
+
+
+window.addEventListener('scroll', () => {
+    const isInViewPort = function(elem) {
+        let bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight - 150 || document.documentElement.clientHeight - 150) &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    for (let i = 0; i < section.length; i++) {
+        const addСlassActive = document.querySelectorAll('div')[i + 1];
+        const addNavActive = document.querySelectorAll('li')[i];
+        let sectionTitle = document.querySelectorAll('title-big')[i];
+        if (isInViewPort(sectionTitle)) {
+            addСlassActive.classList.add('active');
+            addNavActive.classList.add('active-nav')
+            addСlassActive.style = 'padding: 0 1em 0; border-radius: 0.5em; border-style: outset; box-shadow: 0.1em 0.1em 0.9em 0.2em white; transition: ease 0.7s; opacity: 2';
+            addNavActive.style = "background-color: coral; border-radius: 0.5em; border: solid 0.1em";
+        } else if (!isInViewPort(sectionTitle)) {
+            addСlassActive.classList.remove('active')
+            addNavActive.classList.remove('active')
+            addСlassActive.style = "none";
+            addNavActive.style = "none";
+        }
+    }
 });
