@@ -30,6 +30,7 @@
     min-width: 75px;
     margin: 2em 0;
     width: 35%;
+    box-shadow: 0.2em 0.2em 0 green, 0.4em 0.4em 0 whitesmoke;
 }
 
 .about strong {
@@ -64,17 +65,16 @@
 
 /* MEDIAQUERIES */
 
-@media (max-width: 937px) {
+@media (max-width: 1200px) {
     .about .text-wrapper {
         margin: 0;
     }
     .about img {
-        float: right;
         width: 50%;
         margin: 0 5em;
     }
     .about p {
-        width: 70%;
+        width: 90%;
         margin: 1em 1em;
         padding: 0;
     }
