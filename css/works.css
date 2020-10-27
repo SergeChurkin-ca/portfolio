@@ -103,7 +103,7 @@
     }
 }
 
-.work-item {
+.smooth-section {
     transform: translateY(1.5em);
     transition: transform 4s .25s cubic-bezier(0, 1, .3, 1), opacity .5s .25s ease-out;
     will-change: transform;
@@ -112,7 +112,7 @@
     position: relative;
 }
 
-.work-item.is-visible {
+.smooth-section.is-visible {
     transform: translateY(0);
     opacity: 1;
 }

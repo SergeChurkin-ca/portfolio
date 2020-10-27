@@ -66,10 +66,10 @@ $(".js-next").click(function(e) {
 
 
 // Detect request animation frame
-var scroll = window.requestAnimationFrame ||
+let scroll = window.requestAnimationFrame ||
     // IE Fallback
     function(callback) { window.setTimeout(callback, 1000 / 60) };
-var elementsToShow = document.querySelectorAll('.work-item');
+let elementsToShow = document.querySelectorAll('.smooth-section');
 
 function loop() {
 
@@ -93,7 +93,7 @@ function isElementInViewport(el) {
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
     }
-    var rect = el.getBoundingClientRect();
+    let rect = el.getBoundingClientRect();
     return (
         (rect.top <= 0 &&
             rect.bottom >= 0) ||
