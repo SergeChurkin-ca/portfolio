@@ -63,34 +63,43 @@ $(".js-next").click(function(e) {
     e.preventDefault();
 });
 
-// Add class 'active' to section when near top of viewport
-// Define the style of active view and indicate in navbar
 
 
-window.addEventListener('scroll', () => {
-    const isInViewPort = function(elem) {
-        let bounding = elem.getBoundingClientRect();
-        return (
-            bounding.top >= 0 &&
-            bounding.left >= 0 &&
-            bounding.bottom <= (window.innerHeight - 150 || document.documentElement.clientHeight - 150) &&
-            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-    for (let i = 0; i < section.length; i++) {
-        const addСlassActive = document.querySelectorAll('div')[i + 1];
-        const addNavActive = document.querySelectorAll('li')[i];
-        let sectionTitle = document.querySelectorAll('title-big')[i];
-        if (isInViewPort(sectionTitle)) {
-            addСlassActive.classList.add('active');
-            addNavActive.classList.add('active-nav')
-            addСlassActive.style = 'padding: 0 1em 0; border-radius: 0.5em; border-style: outset; box-shadow: 0.1em 0.1em 0.9em 0.2em white; transition: ease 0.7s; opacity: 2';
-            addNavActive.style = "background-color: coral; border-radius: 0.5em; border: solid 0.1em";
-        } else if (!isInViewPort(sectionTitle)) {
-            addСlassActive.classList.remove('active')
-            addNavActive.classList.remove('active')
-            addСlassActive.style = "none";
-            addNavActive.style = "none";
+// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+    // IE Fallback
+    function(callback) { window.setTimeout(callback, 1000 / 60) };
+var elementsToShow = document.querySelectorAll('.work-item');
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('is-visible');
+        } else {
+            element.classList.remove('is-visible');
         }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
     }
-});
+    var rect = el.getBoundingClientRect();
+    return (
+        (rect.top <= 0 &&
+            rect.bottom >= 0) ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+        (rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+}

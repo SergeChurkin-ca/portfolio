@@ -8,9 +8,10 @@
 }
 
 .scroll-down {
-    opacity: 1;
+    opacity: 2;
     -webkit-transition: all 0.5s ease-in 5s;
     transition: all 0.5s ease-in 3s;
+    z-index: 3;
 }
 
 .scroll-down {
