@@ -1,5 +1,6 @@
 .about {
-    height: 100vh;
+    height: auto;
+    padding-bottom: 3em;
 }
 
 .about .text-wrapper {
@@ -11,9 +12,9 @@
 }
 
 .about p {
-    font-size: 1.2em;
-    color: grey;
-    margin: 5em 5em;
+    font-size: 1.3em;
+    color: white;
+    margin: 1em 5em;
     text-align: left;
     line-height: 2em;
     width: 40%;
@@ -43,6 +44,10 @@
     padding: 1em;
 }
 
+.download-cv:hover>i {
+    color: green;
+}
+
 .about i {
     border-radius: 50% 50%;
 }
@@ -66,7 +71,7 @@
     .about img {
         float: right;
         width: 50%;
-        margin-left: 5em;
+        margin: 0 5em;
     }
     .about p {
         width: 70%;
@@ -78,6 +83,10 @@
 @media (max-width: 580px) {
     .circle-bts a:nth-child(n + 2) {
         display: none;
+    }
+    .about p {
+        font-size: 1rem;
+        width: 90%;
     }
 }
 
