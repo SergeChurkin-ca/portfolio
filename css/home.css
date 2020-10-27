@@ -3,15 +3,17 @@
 }
 
 .home .title h1 {
-    font-size: calc(45px + (140 - 45) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(45px + (160 - 45) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     font-weight: 700;
-    padding: calc((40vh / 2)) 0 0.5em;
+    padding: calc((40vh / 2)) 0 0.2em;
     letter-spacing: 0.04em;
+    text-shadow: rgb(39, 38, 38) 3px 3px 3px;
 }
 
 .home span {
-    color: rgb(155, 152, 152);
+    color: rgb(189, 184, 184);
+    text-shadow: white 2px 2px 1px;
 }
 
 @media (max-width: 330px) {
