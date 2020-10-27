@@ -59,14 +59,11 @@
 .work-item ul li {
     display: inline-flex;
     flex-direction: row;
-    /* width: 20%; */
     height: auto;
     padding: 10% 0 0;
 }
 
 .work-item a img:hover {
-    transform: scale(1.025);
-    transition: all 0.3s;
     box-shadow: 5px 5px 5px black;
 }
 

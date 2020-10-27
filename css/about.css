@@ -44,10 +44,6 @@
     padding: 1em;
 }
 
-.download-cv:hover>i {
-    color: green;
-}
-
 .about i {
     border-radius: 50% 50%;
 }
@@ -59,6 +55,10 @@
 
 .download-cv i {
     margin-left: -0.5em;
+}
+
+.download-cv:hover>i {
+    color: green;
 }
 
 
