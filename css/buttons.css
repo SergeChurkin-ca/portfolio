@@ -35,8 +35,8 @@
     background-image: linear-gradient( to bottom, #ebf1f7 13%, #929191 50%, #010202 90%);
     text-decoration: none;
     color: rgb(2, 107, 2);
-    text-shadow: 0px 1px 1px black;
-    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgb(83, 81, 81);
+    box-shadow: 1px 1px 1px rgb(48, 45, 45);
 }
 
 .btn-grad:active,
