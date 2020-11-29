@@ -23,6 +23,10 @@
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+.work-item .text-wrapper {
+    padding: 1.5em;
+}
+
 .work-item h3 {
     margin-top: 1em;
     width: 90%;

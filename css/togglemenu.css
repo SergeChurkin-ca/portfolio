@@ -58,7 +58,7 @@
             text-align: center;
         }
         #toggle:checked~ul {
-            background-color: grey;
+            background-color: rgba(90, 97, 96, 0.7);
             border-radius: 2em 0 0 2em;
             padding: 0 auto;
         }
