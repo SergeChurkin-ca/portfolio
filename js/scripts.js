@@ -69,10 +69,10 @@ $(document).ready(function() {
 });
 
 function onScroll(event) {
-    var scrollPos = $(document).scrollTop();
+    let scrollPos = $(document).scrollTop();
     $('#main-menu a').each(function() {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
+        let currLink = $(this);
+        let refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#main-menu ul li a').removeClass("active");
             currLink.addClass("active-nav");
