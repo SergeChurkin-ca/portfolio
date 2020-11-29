@@ -57,16 +57,23 @@ span {
     text-align: left;
 }
 
-a:hover>.link,
-.active-nav .link {
+.active-nav .link,
+a:hover>.link {
     opacity: 1;
     transition: all 1s;
     display: inline;
     left: 2.7em;
-    background-color: green;
     padding: 0.4em 0.5em 0.5em;
     border-radius: 0 1em 1em 0;
     width: 6em;
+}
+
+.active-nav .link {
+    background-color: green;
+}
+
+a:hover>.link {
+    background-color: none;
 }
 
 .active-nav i {
