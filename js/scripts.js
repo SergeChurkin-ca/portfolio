@@ -42,6 +42,67 @@ function ajax(method, url, data, success, error) {
     xhr.send(data);
 }
 
+
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+    let rect = el.getBoundingClientRect();
+    return (
+        (rect.top <= 0 &&
+            rect.bottom >= 0) ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+        (rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+}
+
+// active nav
+
+$(document).ready(function() {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    // $('a[href^="#"]').on('click', function(e) {
+    //     e.preventDefault();
+    //     $(document).off("scroll");
+
+    //     $('a').each(function() {
+    //         $(this).removeClass('active');
+    //     })
+    //     $(this).addClass('active');
+
+    //     var target = this.hash,
+    //         menu = target;
+    //     $target = $(target);
+    //     $('html, body').stop().animate({
+    //         'scrollTop': $target.offset().top + 2
+    //     }, 500, 'swing', function() {
+    //         window.location.hash = target;
+    //         $(document).on("scroll", onScroll);
+    //     });
+    // });
+});
+
+function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('#main-menu a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#main-menu ul li a').removeClass("active");
+            currLink.addClass("active-nav");
+        } else {
+            currLink.removeClass("active-nav");
+        }
+    });
+}
+
+
 // scroll down arrow
 
 $(".js-next").click(function(e) {
@@ -86,20 +147,3 @@ function loop() {
 
 // Call the loop for the first time
 loop();
-
-// Helper function from: http://stackoverflow.com/a/7557433/274826
-function isElementInViewport(el) {
-    // special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-    let rect = el.getBoundingClientRect();
-    return (
-        (rect.top <= 0 &&
-            rect.bottom >= 0) ||
-        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
-        (rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-    );
-}

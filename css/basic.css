@@ -28,6 +28,13 @@ section {
     margin-left: 5em;
 }
 
+
+/* @media (max-width: 700px) {
+    .skills {
+        padding-bottom: 15em;
+    }
+} */
+
 li {
     list-style: none;
     color: white;
@@ -52,6 +59,7 @@ i:active {
 
 .title-bg {
     overflow: hidden;
+    /* top: 3em; */
     left: 0;
     width: 100%;
     font-size: calc(45px + (150 - 45) * ((100vw - 300px) / (1600 - 300)));

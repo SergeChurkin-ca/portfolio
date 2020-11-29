@@ -1,7 +1,11 @@
 .resume,
 .skills {
     height: auto;
-    padding: 3em 0 10em;
+    padding: 14em 0 1em;
+}
+
+.skills {
+    height: auto;
 }
 
 .resume-items,
