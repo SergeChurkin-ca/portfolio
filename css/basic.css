@@ -52,7 +52,6 @@ i:active {
 
 .title-bg {
     overflow: hidden;
-    /* top: 3em; */
     left: 0;
     width: 100%;
     font-size: calc(45px + (150 - 45) * ((100vw - 300px) / (1600 - 300)));
