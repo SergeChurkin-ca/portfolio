@@ -1,3 +1,3 @@
 ### starting portfolio project
 
-#### serge-web.com
+#### https://www.serge-web.com
