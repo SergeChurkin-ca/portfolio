@@ -1,3 +1,5 @@
 ### starting portfolio project
 
-#### https://www.serge-web.com
+#### hosted on dreamhost https://www.serge-web.com
+
+#### hosted on github pages https://sergechurkin-ca.github.io/portfolio/
