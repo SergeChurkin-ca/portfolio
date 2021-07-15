@@ -1,6 +1,5 @@
 .works {
     height: auto;
-    padding-bottom: 3em;
 }
 
 .smooth-section {
@@ -29,7 +28,7 @@
 
 .work-item {
     background-color: rgb(48, 47, 47);
-    margin: 10% 5%;
+    margin: 10% auto;
     border-radius: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +42,7 @@
 }
 
 .work-item h3 {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 90%;
     font-size: 1.5rem;
 }
@@ -121,7 +120,7 @@
         margin-top: 0;
     }
     .text-wrapper {
-        margin-top: calc(30vw + 2rem)
+        margin-top: calc(30vw + 1rem)
     }
     .work-item a img {
         border-radius: 1rem 1rem 0 0;
