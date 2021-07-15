@@ -81,7 +81,7 @@
 
 .work-item a img {
     margin: 0 auto;
-    border-radius: 1em 0;
+    border-radius: 0 1.5rem 1.5rem 0;
 }
 
 .work-item a {
@@ -123,6 +123,9 @@
     .text-wrapper {
         margin-top: calc(30vw + 2rem)
     }
+    .work-item a img {
+        border-radius: 1rem 1rem 0 0;
+    }
 }
 
 @media (max-width: 800px) {
@@ -153,9 +156,6 @@
         width: 100%;
         margin: 0 auto;
         line-height: 2em;
-    }
-    .work-item img {
-        border-radius: 0 0 1em 1em;
     }
     .static,
     .active {

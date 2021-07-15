@@ -1,13 +1,17 @@
-.button-container {
-    display: inline-flex;
-    flex-direction: row;
+.work-item .button-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 25vw;
+    padding: auto;
 }
 
 .button-container a {
     color: rgb(16, 48, 16);
     font-size: 1.1rem;
+    justify-content: center;
 }
 
 .btn-grad {
@@ -22,7 +26,6 @@
     transition: 0.2s;
     background-size: 200% auto;
     border: none;
-    color: green;
     border-color: none;
     text-shadow: 0px 1px 1px #cac7c7;
     border-radius: 10px;
@@ -34,7 +37,6 @@
     background-position: top bottom;
     background-image: linear-gradient( to bottom, #ebf1f7 13%, #929191 50%, #010202 90%);
     text-decoration: none;
-    color: rgb(2, 107, 2);
     text-shadow: 1px 1px 1px rgb(83, 81, 81);
     box-shadow: 1px 1px 1px rgb(48, 45, 45);
 }
@@ -43,4 +45,10 @@
 .btn-grad:focus {
     transform: scale(0.95);
     box-shadow: 4px 4px 4px black;
+}
+
+@media (max-width: 1100px) {
+    .work-item .button-container {
+        width: 50vw;
+    }
 }
