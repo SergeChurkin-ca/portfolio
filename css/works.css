@@ -56,8 +56,9 @@
 
 .work-item ul img {
     width: 6em;
-    height: 6em;
     padding: 0.5em;
+    max-width: 100%;
+    height: auto;
 }
 
 .work-item ul li {
@@ -72,7 +73,6 @@
 
 .screenshot-wrapper {
     display: flex;
-    padding: auto;
     width: 50%;
     position: relative;
     margin-top: 3rem;
