@@ -1,11 +1,12 @@
 .work-item .button-container {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 0 auto;
-    width: 25vw;
-    padding: auto;
+    width: 20vw;
+    padding: 1em;
+    gap: 2rem;
 }
 
 .button-container a {
@@ -14,22 +15,18 @@
     justify-content: center;
 }
 
-.btn-grad {
-    background-image: linear-gradient( to bottom, #d2d7db 13%, #807e7e 50%, #212222 90%);
-    width: 7em;
+.button-container p {
+    margin: 1rem;
 }
 
 .btn-grad {
-    margin: 10px;
-    padding: 1em 2em;
+    background-image: linear-gradient( to bottom, #d2d7db 13%, #807e7e 50%, #212222 90%);
+    width: 7em;
+    padding: 0.7rem 1rem;
     text-align: center;
     transition: 0.2s;
-    background-size: 200% auto;
-    border: none;
-    border-color: none;
     text-shadow: 0px 1px 1px #cac7c7;
     border-radius: 10px;
-    display: block;
     cursor: pointer;
 }
 
@@ -47,8 +44,10 @@
     box-shadow: 4px 4px 4px black;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 600px) {
     .work-item .button-container {
         width: 50vw;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 }

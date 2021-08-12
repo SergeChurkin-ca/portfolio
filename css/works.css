@@ -33,7 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    width: 80%;
+    width: 90%;
 }
 
 .work-item .text-wrapper {
@@ -120,7 +120,7 @@
         margin-top: 0;
     }
     .text-wrapper {
-        margin-top: calc(30vw + 1rem)
+        margin-top: 55%;
     }
     .work-item a img {
         border-radius: 1rem 1rem 0 0;
@@ -134,7 +134,6 @@
     .work-item {
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
     }
     .work-item a {
         width: 100%;
@@ -166,7 +165,8 @@
 }
 
 @media (max-width: 400px) {
-    .work-item {
-        padding: 1em 0.5em;
+    .work-item p {
+        padding: 0.1rem;
+        font-size: 14px;
     }
 }

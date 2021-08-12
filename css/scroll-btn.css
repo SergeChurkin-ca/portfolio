@@ -10,7 +10,6 @@
 
 .scroll-down {
     opacity: 2;
-    -webkit-transition: all 0.5s ease-in 5s;
     transition: all 0.5s ease-in 3s;
     z-index: 3;
 }
@@ -49,18 +48,12 @@
     20%,
     50%,
     80% {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     40% {
-        -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     60% {
-        -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
         transform: translateY(-5px);
     }
 }
