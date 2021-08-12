@@ -72,10 +72,6 @@ a:hover>.link {
     background-color: green;
 }
 
-a:hover>.link {
-    background-color: none;
-}
-
 .active-nav i {
     color: green;
 }
