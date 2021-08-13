@@ -83,7 +83,7 @@
     }
     
     label {
-        display: none;
+        text-align: center;
     }
     
     .form-wrapper {
@@ -95,11 +95,15 @@
     
     .input-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .input-wrapper .form-element {
+        width: 100%;
     }
     
     .input-wrapper input {
-        width: 47%;
         height: 5em;
     }
     
@@ -169,16 +173,18 @@
     }
     /* MEDIAQUERIES */
     
-    @media (max-width: 860px) {
+    @media (max-width: 960px) {
         .contact-wrapper {
             display: block;
             padding: 2em 0;
         }
         .input-wrapper {
             flex-direction: column;
+            gap: 0;
         }
         .input-wrapper input {
             width: 100%;
+            height: 3rem;
         }
     }
     
