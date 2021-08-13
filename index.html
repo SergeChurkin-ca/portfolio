@@ -5,7 +5,10 @@
     <title>Serge Churkin</title>
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Serge Churkin Portfolio Website">
+    <meta name="author" content="Serge Churkin">
+    <meta name="keywords" content="Serge Churkin, Serge, Toronto-based web-developer, Toronto web-developer, hire web-developer in Toronto, front-end developer Toronto, web-developer, web developer, web-dev, developer, IT, JavaScript developer, React developer, portfolio, web-developer portfolio, computer engineering, software engineer, web application developer, markeing developer, email developer">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176798186-1"></script>
     <script>
@@ -115,7 +118,7 @@
             <section class="home panel js-list-item js-current-panel" id="home">
                 <div class="scroll-section">
                     <div class="scroll">
-                        <a href="#" class="scroll-down link js-next" alt="scroll down button"></a>
+                        <a href="#" class="scroll-down link js-next" aria-label="scroll down button"></a>
                     </div>
                 </div>
 
@@ -153,7 +156,8 @@
 
                 <div class="circle-bts smooth-section">
                     <a class="download-cv" href="https://www.serge-web.com/docs/Serge%20Churkin%20resume.pdf" title="my resume" aria-label="my resume" target="_blank">
-                        <i class="fas fa-download"></i>Download CV
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
                     </a>
                     <a class="tw-ic mr-3" href="https://twitter.com/ChurkinSerge" title="my Twitter" aria-label="my Twitter">
                         <i class="fab fa-lg fa-twitter"></i>
@@ -323,7 +327,7 @@
                                     <a class="btn-grad" target="_blank" href="https://github.com/SergeChurkin-ca/serge-churkin-project-two" aria-label="link button to project under the sea repository">Repo</a>
                                 </p>
                                 <p>
-                                    <a class="btn-grad" target="_blank" href="https://sergechurkin-ca.github.io/serge-churkin-project-two/" aria-label="link button to project under the sea repository">Live</a>
+                                    <a class="btn-grad" target="_blank" href="https://sergechurkin-ca.github.io/serge-churkin-project-two/" aria-label="link button to project under the sea live page">Live</a>
                                 </p>
                             </div>
 
@@ -481,15 +485,15 @@
                                         <div class="input-wrapper">
                                             <div class="form-element">
                                                 <label for="name">Name:</label>
-                                                <input type="text" name="name" placeholder="Full Name" maxlength="40" required />
+                                                <input id="name" type="text" name="name" placeholder="Full Name" maxlength="40" required />
                                             </div>
                                             <div class="form-element">
                                                 <label for="email">Email:</label>
-                                                <input type="text" name="email" placeholder="Email Address" maxlength="40" required />
+                                                <input id="text" type="text" name="email" placeholder="Email Address" maxlength="40" required />
                                             </div>
                                         </div>
                                         <label for="message">Message</label>
-                                        <textarea name="message" placeholder="Your Message" maxlength="250" required></textarea>
+                                        <textarea id="message" name="message" placeholder="Your Message" maxlength="250" required></textarea>
 
                                         <div class="button-container">
                                             <p id="my-form-status"></p>
