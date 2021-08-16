@@ -29,6 +29,7 @@
     min-width: 75px;
     margin: 2em 0;
     width: 35%;
+    max-width: 100%;
     box-shadow: 0.2em 0.2em 0 green, 0.4em 0.4em 0 whitesmoke;
 }
 
