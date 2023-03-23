@@ -176,8 +176,11 @@
 
 /* transparent for small mobile */
 
-@media (max-width: 407px) {
+@media (max-width: 440px) {
     .line {
         background: transparent;
+    }
+    .subtitle {
+        width: 50vw;
     }
 }
