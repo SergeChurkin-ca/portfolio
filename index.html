@@ -92,12 +92,12 @@
                 <ul class="social">
 
                     <li>
-                        <a class="li-ic mr-3" href="https://www.linkedin.com/in/sergechurkin/" aria-label="my Linked In Profile" title="my Linked In Profile">
+                        <a class="li-ic mr-3" href="https://www.linkedin.com/in/sergechurkin/" aria-label="my Linked In Profile" target="_blank" title="my Linked In Profile">
                             <i class="fab fa-lg fa-linkedin-in"> </i>
                         </a>
                     </li>
                     <li>
-                        <a class="git-ic mr-3" href="https://github.com/SergeChurkin-ca" aria-label="my Github" title="my Github">
+                        <a class="git-ic mr-3" href="https://github.com/SergeChurkin-ca" aria-label="my Github" target="_blank" title="my Github">
                             <i class="fab fa-lg fa-github"> </i>
                         </a>
                     </li>
@@ -159,10 +159,10 @@
                         <span>Download CV</span>
                     </a>
 
-                    <a class="li-ic mr-3" href="https://www.linkedin.com/in/sergechurkin/" title="my Linked In profile" aria-label="my Linked In Profile">
+                    <a class="li-ic mr-3" href="https://www.linkedin.com/in/sergechurkin/" title="my Linked In profile" target="_blank" aria-label="my Linked In Profile">
                         <i class="fab fa-lg fa-linkedin-in"></i>
                     </a>
-                    <a class="git-ic mr-3" href="https://github.com/SergeChurkin-ca" title="my Github" aria-label="my Github">
+                    <a class="git-ic mr-3" href="https://github.com/SergeChurkin-ca" title="my Github" target="_blank" aria-label="my Github">
                         <i class="fab fa-lg fa-github"></i>
                     </a>
                 </div>
@@ -481,7 +481,7 @@
                                             </div>
                                             <div class="form-element">
                                                 <label for="email">Email:</label>
-                                                <input id="email" type="text" name="email" placeholder="Email Address" maxlength="40" required />
+                                                <input id="email" title="Please Check Email Format" type="text" name="email" placeholder="Email Address" maxlength="40" required pattern="[a-zA-Z0-9._-]*@[a-zA-Z]*\.[a-zA-Z]{2,3}" />
                                             </div>
                                         </div>
                                         <label for="message">Message</label>
@@ -490,10 +490,10 @@
                                         <div class="button-container">
                                             <p id="my-form-status"></p>
                                             <button id="my-form-button" class="button">
-                                                <span class="text">Send Message<i class="fas fa-arrow-right"></i></span>
+                                                <span class="text">Send Message</span>
                                             </button>
                                             <button type="reset" onclick="resetForm" class="button-reset" id="button-reset">
-                                                reset
+                                                Reset
                                             </button>
                                         </div>
                                     </div>

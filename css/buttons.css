@@ -9,10 +9,25 @@
     gap: 2rem;
 }
 
+.button,
+.button-reset {
+    cursor: pointer;
+}
+
 .button-container a {
     color: rgb(16, 48, 16);
     font-size: 1.1rem;
     justify-content: center;
+}
+
+.work-item a img {
+    margin: 0 auto;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.work-item a {
+    margin: 0 auto;
+    display: flex;
 }
 
 .button-container p {
@@ -36,6 +51,7 @@
     text-decoration: none;
     text-shadow: 1px 1px 1px rgb(83, 81, 81);
     box-shadow: 1px 1px 1px rgb(48, 45, 45);
+    color: #ffffff;
 }
 
 .btn-grad:active,

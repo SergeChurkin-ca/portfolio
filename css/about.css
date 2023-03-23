@@ -6,7 +6,7 @@
     display: inline-flex;
     padding: 2em 0;
     flex-wrap: wrap;
-    margin: 3em auto;
+    margin: 1em auto;
     width: 90%;
 }
 
@@ -58,7 +58,10 @@
     margin-left: -0.5em;
 }
 
-.download-cv:hover>i {
+.download-cv:hover>i,
+.download-cv:focus>i,
+.download-cv:visited>i,
+.download-cv:active>i {
     color: green;
 }
 
