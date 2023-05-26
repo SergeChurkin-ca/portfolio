@@ -20,16 +20,6 @@
     justify-content: center;
 }
 
-.work-item a img {
-    margin: 0 auto;
-    border-radius: 0 1.5rem 1.5rem 0;
-}
-
-.work-item a {
-    margin: 0 auto;
-    display: flex;
-}
-
 .button-container p {
     margin: 1rem;
 }
