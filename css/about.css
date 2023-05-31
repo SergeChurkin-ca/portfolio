@@ -12,7 +12,7 @@
 
 .about .text-wrapper p {
     font-size: 1.3em;
-    color: white;
+    color: #ffffff;
     margin: 1em 5em;
     text-align: left;
     line-height: 2em;
@@ -30,16 +30,16 @@
     margin: 2em 0;
     width: 35%;
     max-width: 100%;
-    box-shadow: 0.2em 0.2em 0 green, 0.4em 0.4em 0 whitesmoke;
+    box-shadow: 0.2em 0.2em 0 #008000, 0.4em 0.4em 0 #f5f5f5;
 }
 
 .about strong {
-    color: green;
+    color: #008000;
 }
 
 .about i,
 .download-cv {
-    color: white;
+    color: #ffffff;
     margin: 0 1em;
     background-color: rgb(56, 53, 53);
     padding: 1em;
@@ -62,7 +62,7 @@
 .download-cv:focus>i,
 .download-cv:visited>i,
 .download-cv:active>i {
-    color: green;
+    color: #008000;
 }
 
 
@@ -144,9 +144,33 @@
     animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
     animation-play-state: running;
     vertical-align: middle;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-play-state: running;
     animation-fill-mode: backwards;
+}
+
+.typing-title p:nth-child(1) {
+    transform: scale(0.001);
+    animation: 0.5s slideIn ease-in-out forwards 0.5s;
+    animation-delay: 2s;
+}
+
+.typing-title p:nth-child(2) {
+    transform: scale(0.001);
+    animation: 0.5s slideIn ease-in-out forwards 0.5s;
+    animation-delay: 2.5s;
+}
+
+.typing-title p:nth-child(3) {
+    transform: scale(0.001);
+    animation: 0.5s slideIn ease-in-out forwards 0.5s;
+    animation-delay: 3s;
+}
+
+.typing-title p:nth-child(4) {
+    transform: scale(0.001);
+    animation: 0.5s slideIn ease-in-out forwards 1s;
+    animation-delay: 3.5s;
 }
 
 @media (max-width: 700px) {

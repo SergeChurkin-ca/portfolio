@@ -5,7 +5,7 @@
     
     a {
         text-decoration: none;
-        color: whitesmoke;
+        color: #f5f5f5;
     }
     
     h3 {
@@ -46,7 +46,7 @@
     }
     
     .contact-info span {
-        color: green;
+        color: #008000;
     }
     
     .contact-info {
@@ -55,7 +55,7 @@
     }
     
     .contacts i {
-        color: green;
+        color: #008000;
         font-size: 3.5rem;
         float: left;
         padding-left: 0.5em;
@@ -110,7 +110,7 @@
     form textarea,
     input {
         width: 100%;
-        border: white;
+        border: #ffffff;
         padding: 1.2rem;
         margin: 2rem 0;
         border-radius: 0.5rem;
@@ -145,18 +145,18 @@
     
     .button-reset:hover,
     .button-reset:focus {
-        color: red;
+        color: #ff0000;
     }
     
     .contacts .button:hover>span,
     .contacts .button:focus {
-        color: white;
+        color: #ffffff;
     }
     
     .form-wrapper input[type="text"],
     .form-wrapper input[type="email"],
     .form-wrapper textarea {
-        background-color: grey;
+        background-color: #808080;
     }
     
      ::placeholder {

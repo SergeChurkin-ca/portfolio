@@ -24,7 +24,7 @@
 }
 
 .works span {
-    color: green;
+    color: #008000;
 }
 
 .work-item {
@@ -38,7 +38,18 @@
     max-width: 1600px;
 }
 
-.work-item a img {
+.work-item img {
+    max-height: 480px;
+    width: auto;
+    max-width: 100%;
+}
+
+.work-item:nth-child(even) a img {
+    margin: 0 auto;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.work-item:nth-child(odd) a img {
     margin: 0 auto;
     border-radius: 0 1.5rem 1.5rem 0;
 }
@@ -55,6 +66,7 @@
 .work-item .text-wrapper {
     padding: 1.5em;
     width: 50%;
+    position: relative;
 }
 
 .work-item h3 {
@@ -71,7 +83,7 @@
 }
 
 .work-item ul img {
-    width: 6em;
+    width: 4.5em;
     min-width: 100%;
     padding: 0.5em;
     max-width: 100%;
@@ -105,6 +117,11 @@
 /* media queries */
 
 @media (max-width: 1100px) {
+    .work-item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
     .work-item .text-wrapper,
     .screenshot-wrapper {
         width: 100%;
@@ -115,18 +132,14 @@
     .text-wrapper {
         margin-top: 55%;
     }
-    .work-item a img {
-        border-radius: 1rem 1rem 0 0;
+    .work-item img {
+        border-radius: 32px 32px 0 0 !important;
     }
 }
 
 @media (max-width: 800px) {
     .works-wrapper {
         margin: 0 1em;
-    }
-    .work-item {
-        flex-direction: column;
-        justify-content: center;
     }
     .work-item a {
         width: 100%;

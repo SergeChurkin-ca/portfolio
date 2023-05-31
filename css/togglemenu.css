@@ -20,7 +20,7 @@
         }
         .fa-bars,
         .toggle-menu ul i {
-            text-shadow: 2px 2px 5px black;
+            text-shadow: 2px 2px 5px #000000;
         }
         header,
         .social {
@@ -77,6 +77,6 @@
         }
         .social i:hover {
             font-weight: 800;
-            color: salmon;
+            color: #fa8072;
         }
     }

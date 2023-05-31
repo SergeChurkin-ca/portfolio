@@ -20,11 +20,11 @@ header .logo a,
 .icon,
 .social a,
 .link {
-    color: white;
+    color: #ffffff;
 }
 
 .logo {
-    background-color: green;
+    background-color: #008000;
     height: 2em;
     font-size: 2rem;
     text-align: center;
@@ -50,7 +50,7 @@ header .logo a,
     position: absolute;
     top: 0.2em;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 span {
@@ -69,11 +69,11 @@ a:hover>.link {
 }
 
 .active-nav .link {
-    background-color: green;
+    background-color: #008000;
 }
 
 .active-nav i {
-    color: green;
+    color: #008000;
 }
 
 @media (max-width: 700px) {

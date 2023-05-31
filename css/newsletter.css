@@ -1,0 +1,56 @@
+.work-item iframe {
+    min-height: 16rem !important;
+}
+
+.button-container-one,
+.button-container-one p {
+    width: 100% !important;
+}
+
+.button-container .btn-no-grad {
+    font-family: arial, helvetica, sans-serif !important;
+    background: #FF755E;
+    border-color: #FF755E;
+    padding: 12.95px 41px;
+    line-height: 12px;
+    transition: all .15s linear;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    color: #ffffff;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: -4.5rem;
+}
+
+.btn-grad:hover {
+    background-position: top bottom;
+    background-image: linear-gradient( to bottom, #ebf1f7 13%, #929191 50%, #010202 90%);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(83, 81, 81);
+    box-shadow: 1px 1px 1px rgb(48, 45, 45);
+    color: #ffffff;
+}
+
+aside {
+    position: fixed;
+    right: 3vw;
+    top: 94vh;
+}
+
+.return i {
+    font-size: 42px;
+}
+
+@media (max-width:800px) {
+    .button-container .btn-no-grad {
+        margin-top: -3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .return i {
+        font-size: 20px;
+    }
+}
