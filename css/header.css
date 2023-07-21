@@ -60,7 +60,7 @@ span {
 .active-nav .link,
 a:hover>.link {
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.5s;
     display: inline;
     left: 2.7em;
     padding: 0.4em 0.5em 0.5em;
@@ -80,6 +80,9 @@ a:hover>.link {
     a:hover>.link,
     .active-nav .link {
         display: none;
+    }
+    header {
+        left: 0 !important
     }
 }
 

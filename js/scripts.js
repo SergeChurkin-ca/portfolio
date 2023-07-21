@@ -83,6 +83,34 @@ function onScroll(event) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    let timer; // Variable to store the timer
+    const header = document.querySelector("header");
+    const wrapper = document.querySelector(".wrapper");
+
+    function moveHeaderToRight() {
+        header.style = "left: 0rem; transition: all 0.5s";
+    }
+
+    function moveHeaderToLeft() {
+        header.style = "left: -10rem; transition: all 0.2s;";
+    }
+
+    function resetTimer() {
+        clearTimeout(timer);
+        moveHeaderToRight();
+        // Set a new timer to move the header back to -10rem after 5 seconds
+        timer = setTimeout(moveHeaderToLeft, 5000);
+    }
+
+    wrapper.addEventListener("mousemove", resetTimer);
+    // For scroll behavior
+    window.addEventListener("scroll", function() {
+        resetTimer();
+    });
+});
+
+
 // scroll down arrow
 
 $(".js-next").click(function(e) {

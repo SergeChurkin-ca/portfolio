@@ -30,7 +30,7 @@
     margin: 2em 0;
     width: 35%;
     max-width: 100%;
-    box-shadow: 0.2em 0.2em 0 #008000, 0.4em 0.4em 0 #f5f5f5;
+    box-shadow: -0.5em -0.5em 0 #008000, 0.4em 0.4em 0 #f5f5f5;
 }
 
 .about strong {
